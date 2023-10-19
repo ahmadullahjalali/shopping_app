@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/widgets/DealsWidget.dart';
 import 'package:shopping_app/widgets/HomeAppBar.dart';
+import 'package:shopping_app/widgets/HomeBottomBar.dart';
 import 'package:shopping_app/widgets/ItemsWidget.dart';
 
 class HomePage extends StatelessWidget {
@@ -65,7 +66,7 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 10),
                 Container(
                   alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.only(left: 10),
+                  margin: EdgeInsets.only(left: 10, bottom: 10),
                   child: Text(
                     "New Products",
                     style: TextStyle(
@@ -81,6 +82,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: HomeBottomBar(),
     );
   }
 }
